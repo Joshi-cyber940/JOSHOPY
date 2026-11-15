@@ -1,14 +1,25 @@
 console.log("Admin access is running!");
 
-const notificationDiv = document.querySelector(
+const notificationButton = document.querySelector(
     ".notification-div"
 );
 
 let pressTimer;
 
-if (notificationDiv) {
+if (notificationButton) {
 
-    notificationDiv.addEventListener("pointerdown", function() {
+    // Prevent Chrome's long-press context menu
+    notificationButton.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+    });
+
+    // Start the five-second timer
+    notificationButton.addEventListener("pointerdown", function(event) {
+
+        // Only respond to the main mouse button or touch
+        if (event.pointerType === "mouse" && event.button !== 0) {
+            return;
+        }
 
         pressTimer = setTimeout(function() {
 
@@ -18,15 +29,18 @@ if (notificationDiv) {
 
     });
 
-    notificationDiv.addEventListener("pointerup", function() {
+    // Cancel the timer when the user releases
+    notificationButton.addEventListener("pointerup", function() {
         clearTimeout(pressTimer);
     });
 
-    notificationDiv.addEventListener("pointerleave", function() {
+    // Cancel if the pointer moves away
+    notificationButton.addEventListener("pointerleave", function() {
         clearTimeout(pressTimer);
     });
 
-    notificationDiv.addEventListener("pointercancel", function() {
+    // Cancel if the interaction is interrupted
+    notificationButton.addEventListener("pointercancel", function() {
         clearTimeout(pressTimer);
     });
 

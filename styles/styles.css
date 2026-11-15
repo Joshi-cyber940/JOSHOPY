@@ -60,6 +60,19 @@ nav{
   width: 34px;
   height: 30px;
 }
+.notification-div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.notification-div img {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
 .me-nav{
   display: none;
   position: absolute;
