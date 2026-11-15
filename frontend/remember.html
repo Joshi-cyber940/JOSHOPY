@@ -1,0 +1,50 @@
+<div class="grid-container" data-product-id="product-001"></div>
+
+<div class="grid-container" data-product-id="product-002"></div>
+
+<!--find where to add-->
+const productId = card.dataset.productId;
+
+<!--when addind a product-->
+<!--replace-->
+cartItems.set(name, {
+    name: name,
+    quantity: selectedQuantity
+});
+
+<!--with-->
+cartItems.set(productId, {
+    id: productId,
+    name: name,
+    quantity: selectedQuantity
+});
+
+<!--when updating a product-->
+<!--replace-->
+cartItems.set(name, {
+    name: name,
+    quantity: selectedQuantity
+});
+
+<!--with-->
+cartItems.set(productId, {
+    id: productId,
+    name: name,
+    quantity: selectedQuantity
+});
+
+<!--when deleting a product-->
+<!--replace-->
+cartItems.delete(name);
+
+<!--with-->
+cartItems.delete(productId);
+
+<!--badge calculation can remain-->
+cartCount.textContent = cartItems.size;
+
+<!---->
+
+<!---->
+
+<!---->

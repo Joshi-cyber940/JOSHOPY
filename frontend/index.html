@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshopy | Buy and sell online</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Joshopy</h1>
+      <h4>Buy and sell goods online</h4>
+    </div>
+    
+    <nav>
+    <div class="notification-div">
+      <a href="notifications.html">
+        <img class="notification-icon" src="icons/notifications.svg" alt="notification-icon">
+      </a>
+        <div class="tooltip">Notifications</div>
+    </div>
+
+    <div class="me-nav">
+      
+      <a href="sign-up.html">
+        <div>Sign Up</div>
+      </a>
+       <a href="login.html">
+        <div>Log In</div>
+      </a>
+    </div>
+
+    <div class="me">
+        <img src="icons/account_circle-icon.svg" alt="My profile">
+    </div>
+
+    <div class="dots-nav">
+      
+      <a href="">
+        <div>Help</div>
+      </a>
+       <a href="">
+        <div>Sell on Joshopy</div>
+      </a>
+       <a href="">
+        <div>Settings</div>
+      </a>
+       <a href="">
+        <div>Contact Us</div>
+      </a>
+    </div>
+    <div class="dots-div">
+        <img class="dots" src="icons/vert-dots-icon.svg" alt="">
+    </div>
+    </nav>
+  </header>
+
+  <main>
+    
+        <div class="side">
+          <button class="close-side-bar">
+            <img src="icons/close-icon.svg" alt="">
+          </button>
+          <div class="top-side"></div>
+          <div class="title">Help</div>
+          <a href="">
+            <div class="title-btn">
+              <span id="username">Username</span>
+            </div>
+          </a>
+          <a href="">
+            <div class="title-btn">
+              <img src="icons/shopping_cart-icon.svg" alt="">
+              Cart
+            </div>
+          </a>
+          <div id="cart-items"></div>
+          <a href="">
+            <div class="title-btn">
+              <img src="icons/settings-icon.svg" alt="">
+              Settings
+            </div>
+          </a>
+          
+          <div class="title">Categories</div>
+          <a href="">
+            <div class="title-btn"> 
+              <img src="icons/package_2-icon.svg" alt="">
+              Clothes & Accessories</div>
+          </a>
+          
+          <div class="title">Accounts</div>
+          <a href="">
+            <div class="title-btn"> 
+              <img src="icons/account_circle-icon.svg" alt="">
+               My profile</div>
+          </a>
+          
+        </div>
+    <section class="mobile">
+      <div class="menu">
+        
+        <button>
+          &#9776;
+        </button>
+      </div>
+
+      <div class="mobile-search">
+        <input type="search" id="search" class="mobile-search-box" placeholder="Search on Joshopy">
+        <button class="mobile-search-button">
+          <img src="icons/search.svg" alt="search-button">
+        </button> 
+      </div>
+    </section>
+    <section class="search-engine">
+     
+      <div class="home">
+        <a href="index.html">
+        <button>
+          <img src="icons/house-solid-full.svg" alt="Home">
+        </button>
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="search" id="search" class="search-box" placeholder="Search on Joshopy">
+        <button class="desktop-search-button">
+          <img src="icons/search.svg" alt="search-button">
+        </button> 
+      </div>
+    <div class="right">
+      <div class="right-button">
+        <a href="wishlist.html">
+             <img src="icons/favorite-icon.svg" alt="wishlist">
+        </a>
+        <div class="tooltip">Wishlist</div>
+      </div>
+      
+      <div class="right-button">
+        <a href="cart.html">
+              <img class="cart-img" src="icons/shopping_cart-icon.svg" alt="cart">
+        </a>
+        <span class="cart-count" id="cart-count">0</span>
+        <div class="tooltip">Cart</div>
+      </div>
+    </div>
+      
+    </section>
+
+    <section class="grid-items">
+     
+      <div class="grid-container">
+        <div>
+          <img src="images/6-piece-non-stick-baking-set.webp" alt="baking set">
+        </div>
+
+        <div  class="grid-details">
+          <p>Non-stick Baking Set</p>
+
+          <p class="product-price">
+            ₦25,000
+         </p>
+          <div class="quantity-controls">
+              <div class="flex-row">
+                <button class="click-button">
+                  <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+                </button>
+                <select name="quantity" class="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                </select>
+                <button class="click-button">
+                  <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+                </button>
+              </div> 
+          </div>
+          <button class="add-cart-button">
+            Add to Cart
+          </button>
+
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/6-piece-white-dinner-plate-set.jpg" alt="dinner plate set">
+        </div>
+        <div  class="grid-details">
+          <p>White Dinner Plate Set</p>
+
+          <p class="product-price">
+            ₦15,000
+         </p>
+
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+           </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="shirt">
+        </div>
+        <div  class="grid-details">
+          <p>Plain Cotton Tshirt</p>
+
+          <p class="product-price">
+            ₦11,000
+         </p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/athletic-cotton-socks-6-pairs.jpg" alt="socks">
+        </div>
+        <div  class="grid-details">
+          <p>Athletic Cotton Socks</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+           </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/bathroom-rug.jpg" alt="bath rug">
+        </div>
+        <div  class="grid-details">
+          <p>Bathroom Rug</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+          </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/black-2-slot-toaster.jpg" alt="toaster">
+        </div>
+        <div  class="grid-details">
+          <p>2 Slot Toaster</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+           </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/blackout-curtain-set-beige.webp" alt="curtain">
+        </div>
+        <div  class="grid-details">
+          <p>Curtain Set Beige</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+           </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/coffeemaker-with-glass-carafe-black.jpg" alt="coffee maker">
+        </div>
+        <div  class="grid-details">
+          <p>Coffeemaker with Glass</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/cotton-bath-towels-teal.webp" alt="towels">
+        </div>
+        <div  class="grid-details">
+          <p>Cotton Bath Towels</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/countertop-blender-64-oz.jpg" alt="blender">
+        </div>
+        <div  class="grid-details">
+          <p>Countertop Blender</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/double-elongated-twist-french-wire-earrings.webp" alt="earrings">
+        </div>
+        <div  class="grid-details">
+          <p>French Wire Earrings</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/duvet-cover-set-blue-twin.jpg" alt="duvet">
+        </div>
+        <div  class="grid-details">
+          <p>Duvet Cover Set Twin</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/electric-glass-and-steel-hot-water-kettle.webp" alt="electric jug">
+        </div>
+        <div  class="grid-details">
+          <p>Electric Kettle</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/facial-tissue-2-ply-18-boxes.jpg" alt="facial tissue">
+        </div>
+        <div  class="grid-details">
+          <p>Facial Tissue</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/floral-mixing-bowl-set.jpg" alt="mixing bowl">
+        </div>
+        <div  class="grid-details">
+          <p>Floral Mixing Bowl Set</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+           </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/intermediate-composite-basketball.jpg" alt="basketball">
+        </div>
+        <div  class="grid-details">
+          <p>Basketball</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/kitchen-paper-towels-30-pack.jpg" alt="kitchen paper towels">
+        </div>
+        <div  class="grid-details">
+          <p>Kitchen Paper Towels</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/knit-athletic-sneakers-gray.jpg" alt=" gray sneakers">
+        </div>
+        <div  class="grid-details">
+          <p>Knit Athletic Sneakers</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/liquid-laundry-detergent-plain.jpg" alt="liquid detergent">
+        </div>
+        <div  class="grid-details">
+          <p>Liquid Laundry Detergent</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/luxury-tower-set-6-piece.jpg" alt="luxury towel">
+        </div>
+        <div  class="grid-details">
+          <p>Luxury Tower Set</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-athletic-shoes-green.jpg" alt="green shoes">
+        </div>
+        <div  class="grid-details">
+          <p>Men Athletic Shoes</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/knit-athletic-sneakers-pink.webp" alt="pink sneakers">
+        </div>
+        <div  class="grid-details">
+          <p>Knit Athletic Sneakers</p>
+          
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-chino-pants-beige.jpg" alt="men pants">
+        </div>
+        <div  class="grid-details">
+          <p>Men Chino Pants Beige</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-cozy-fleece-zip-up-hoodie-red.jpg" alt="hoodie">
+        </div>
+        <div  class="grid-details">
+          <p>Zip-up Hoodie</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-golf-polo-t-shirt-blue.jpg" alt="T-shirt">
+        </div>
+        <div  class="grid-details">
+          <p>Men Golf Polo T-shirt</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-navigator-sunglasses-brown.jpg" alt="sunglasses">
+        </div>
+        <div  class="grid-details">
+          <p>Men Sunglasses</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/non-stick-cooking-set-15-pieces.webp" alt="">
+        </div>
+        <div  class="grid-details">
+          <p>Non-stick Cooking Set</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div>
+          <img src="images/men-slim-fit-summer-shorts-gray.jpg" alt="">
+        </div>
+        <div  class="grid-details">
+          <p>Men Summer Shorts</p>
+          <div class="quantity-controls">
+           <div class="flex-row">
+            <button class="click-button">
+              <img src="icons/remove_shopping_cart-icon.svg" alt="remove button">
+            </button>
+            <select name="quantity" class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <button class="click-button">
+              <img src="icons/add_shopping_cart-icon.svg" alt="add button">
+            </button>
+            </div>
+          </div>
+          <button class="add-cart-button">Add to Cart</button>
+          <div class="cart-actions" hidden>
+            <button class="update-cart-button">
+              Update
+            </button>
+            <button class="delete-cart-button">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+  
+  <script src="js/sign.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/side-bar.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/admin-access.js"></script>
+</body>
+</html>

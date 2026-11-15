@@ -1,0 +1,63 @@
+/* Hide elements when JavaScript sets hidden */
+[hidden] {
+    display: none !important;
+}
+
+/* Update and Delete buttons */
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.update-cart-button,
+.delete-cart-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.update-cart-button {
+    background-color: #225979;
+    color: white;
+    transition: all 0.16s ease;
+}
+
+.update-cart-button:hover{
+    background-color: white;
+    color: #225979;
+    border: 1px solid #225979;
+}
+
+.update-cart-button:active{
+    opacity: 0.5;
+}
+
+.delete-cart-button {
+    background-color: #dc3545;
+    color: white;
+    transition: all 0.16s ease;
+}
+
+.delete-cart-button:hover{
+    opacity: 0.8;
+}
+
+.delete-cart-button:active{
+    opacity: 0.5;
+}
+
+/* Products displayed inside the cart sidebar */
+.cart-item {
+    padding: 15px 5px 15px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    color: #141414;
+}
+
+.cart-item p {
+    margin-bottom: 5px;
+}
